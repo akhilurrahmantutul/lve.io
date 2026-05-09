@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levelyn Esports | Official Organization Portfolio</title>
+    <meta name="description" content="Official portfolio of Levelyn Esports. Visionary gaming organization based in Bangladesh.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --brand: #00F0FF;
+            --brand-dim: rgba(0, 240, 255, 0.1);
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #000;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        
+        .text-brand { color: var(--brand); }
+        .bg-brand { background-color: var(--brand); }
+        .border-brand { border-color: var(--brand); }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(0, 240, 255, 0.3);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.1);
+            transform: translateY(-8px);
+        }
+
+        @keyframes infinite-slide {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .animate-slide {
+            display: flex;
+            width: max-content;
+            animation: infinite-slide 30s linear infinite;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at center, var(--brand-dim) 0%, transparent 70%);
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--brand); }
+
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6 px-6 md:px-12 flex justify-between items-center bg-black/50 backdrop-blur-md border-b border-white/5">
+        <div class="flex items-center gap-3">
+            <img src="./logo_main.png" alt="Levelyn Logo" class="h-10 w-auto" onerror="this.src='https://placehold.co/40x40/000000/00F0FF?text=LVE'">
+            <div class="flex flex-col">
+                <span class="font-display text-xl font-bold tracking-tighter text-white leading-none">LEVELYN</span>
+                <span class="text-[10px] font-black text-brand tracking-[0.2em]">ESPORTS</span>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            <a href="#about" class="hover:text-brand transition-colors">About</a>
+            <a href="#tournaments" class="hover:text-brand transition-colors">Legacy</a>
+            <a href="#players" class="hover:text-brand transition-colors">Players</a>
+            <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-20 px-6 md:px-12 overflow-hidden">
+        <div class="absolute inset-0 hero-gradient opacity-30 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <span class="inline-block px-3 py-1 rounded-full bg-brand/10 border border-brand/20 text-brand text-[10px] font-bold uppercase tracking-widest mb-6 italic">Level Up With Levelyn</span>
+                <h1 class="text-6xl md:text-[8rem] font-black leading-[0.85] mb-8 uppercase italic-display">
+                    VI<span class="text-brand">SION</span>ARY<br>ESPORTS
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-lg mb-10 leading-relaxed font-light">
+                    Shaping the future of competitive gaming in Bangladesh and beyond through professionalism and innovation.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#about" class="btn-hover bg-brand text-black px-8 py-4 font-black uppercase text-sm flex items-center gap-2 shadow-[4px_4px_0px_#fff]">
+                        Get Started <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://discord.gg/levelyn-esports-community-1188110128801665157" target="_blank" class="glass px-8 py-4 font-black uppercase text-sm hover:bg-white/10">
+                        Join Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div data-aos="fade-up">
+                <h2 class="text-5xl font-black uppercase mb-8 italic">Organisational<br><span class="text-brand">History</span></h2>
+                <p class="text-slate-400 text-lg leading-relaxed mb-12">
+                    Founded on December 23, 2023, as Moba Addicted Community, our organization rapidly rebranded into Levelyn Esports to better align with our vision of a professional global gaming community.
+                </p>
+                <div class="space-y-4">
+                    <div class="glass p-4 rounded-xl flex justify-between items-center">
+                        <span class="font-bold text-white uppercase">Founder & Owner</span>
+                        <span class="text-brand text-xs font-black uppercase tracking-widest">Akhilur Rahman Tutul</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-aos="zoom-in">
+                <div class="glass p-8 rounded-2xl flex flex-col items-center justify-center text-center">
+                    <i data-lucide="globe" class="text-brand w-8 h-8 mb-4"></i>
+                    <div class="text-4xl font-black">150K+</div>
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Public Reach</div>
+                </div>
+                <div class="glass p-8 rounded-2xl flex flex-col items-center justify-center text-center">
+                    <i data-lucide="award" class="text-brand w-8 h-8 mb-4"></i>
+                    <div class="text-4xl font-black">LVE</div>
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Tag</div>
+                </div>
+                <div class="glass p-8 rounded-2xl flex flex-col items-center justify-center text-center col-span-2">
+                    <i data-lucide="shield-check" class="text-brand w-8 h-8 mb-4"></i>
+                    <div class="text-4xl font-black italic">LEVEL UP</div>
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Established 2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Slide -->
+    <section class="py-20 border-y border-white/5 overflow-hidden bg-white/[0.02]">
+        <div class="animate-slide items-center">
+            <div class="flex items-center gap-20 px-10">
+                <div class="flex flex-col items-center">
+                    <span class="text-white text-3xl font-black uppercase tracking-tighter">Esports Bangla Bulletin</span>
+                    <span class="text-brand text-[8px] font-bold uppercase">News Media Partner</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-white text-3xl font-black uppercase italic">MLBB Bangladesh</span>
+                    <span class="text-brand text-[8px] font-bold uppercase">Official Sponsor</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-white text-3xl font-black uppercase tracking-tighter italic">AIVEN</span>
+                    <span class="text-brand text-[8px] font-bold uppercase">Content Partner</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-20 px-10">
+                <div class="flex flex-col items-center">
+                    <span class="text-white text-3xl font-black uppercase tracking-tighter">Esports Bangla Bulletin</span>
+                    <span class="text-brand text-[8px] font-bold uppercase">News Media Partner</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-white text-3xl font-black uppercase italic">MLBB Bangladesh</span>
+                    <span class="text-brand text-[8px] font-bold uppercase">Official Sponsor</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-white text-3xl font-black uppercase tracking-tighter italic">AIVEN</span>
+                    <span class="text-brand text-[8px] font-bold uppercase">Content Partner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-black py-20 px-6 md:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div>
+                <h2 class="text-4xl font-black uppercase mb-2 italic">Level Up <span class="text-brand">Today.</span></h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.facebook.com/levelynesports" class="glass w-12 h-12 rounded-full flex items-center justify-center hover:bg-brand hover:text-black hover:border-brand"><i data-lucide="facebook"></i></a>
+                <a href="https://youtube.com/@levelynesports" class="glass w-12 h-12 rounded-full flex items-center justify-center hover:bg-brand hover:text-black hover:border-brand"><i data-lucide="youtube"></i></a>
+                <a href="https://discord.gg/levelyn-esports-community-1188110128801665157" class="glass w-12 h-12 rounded-full flex items-center justify-center hover:bg-brand hover:text-black hover:border-brand"><i data-lucide="message-square"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 text-center text-[10px] font-bold text-slate-400 tracking-[0.3em] uppercase">
+            &copy; 2026 LEVELYN ESPORTS
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        AOS.init({ once: true });
+    </script>
+</body>
+</html>
